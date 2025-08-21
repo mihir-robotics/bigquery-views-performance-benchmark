@@ -8,7 +8,7 @@ The goal is to understand trade-offs between query cost, execution speed, and us
 |--------------------|-------------|-------------|--------------|
 | [**Materialized View**](https://cloud.google.com/bigquery/docs/materialized-views-intro) | Precomputed view that stores results and refreshes automatically. | - Speeds up repeated queries<br>- Reduces query cost<br>- Ideal for dashboards & recurring analytics | - Highly volatile data (refresh overhead)<br>- Queries with unsupported features (e.g., non-deterministic functions) |
 |  [**Logical View**](https://cloud.google.com/bigquery/docs/views)  | Saved SQL query definition, always executed at runtime on latest data. | - Simplifies query reuse<br>- Ensures always fresh data<br>- Centralizes complex SQL logic | - Performance-sensitive workloads<br>- Expensive queries run frequently |
-| [**Table Function**](https://cloud.google.com/bigquery/docs/table-functions-intro) | Parameterized SQL function that returns a table. | - Flexible & reusable<br>- Promotes modular/DRY SQL<br>- Good for dynamic variations | - No caching/precomputation<br>- Complex ETL-like transformations |
+| [**Table Function**](https://cloud.google.com/bigquery/docs/table-functions) | Parameterized SQL function that returns a table. | - Flexible & reusable<br>- Promotes modular/DRY SQL<br>- Good for dynamic variations | - No caching/precomputation<br>- Complex ETL-like transformations |
 
 
 ## Setup
