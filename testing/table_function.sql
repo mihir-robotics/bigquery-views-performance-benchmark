@@ -1,5 +1,4 @@
-
-
+-- Table function testing queries
 -- #1
 SELECT * FROM `<your-project-id>.core.alphafold_TF` ('2021-06-02')
 
