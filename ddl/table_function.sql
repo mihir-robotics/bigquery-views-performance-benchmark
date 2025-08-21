@@ -9,4 +9,4 @@ SELECT
   isReviewed AS `Review Flag`,
 FROM
   `<your-project-id>.core.alphafold`
-  WHERE sequenceVersionDate = param_date
+  WHERE sequenceVersionDate = param_date;

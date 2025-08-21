@@ -1,3 +1,4 @@
+-- Obtain query performance metrics from JOBS view
 SELECT
 query,
 total_bytes_processed,

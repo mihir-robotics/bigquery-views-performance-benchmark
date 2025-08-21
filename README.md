@@ -85,4 +85,8 @@ WHERE
 
 ## Conclusion
 
-## References / Related Links
+- **Materialized Views** achieved the best balance, with faster average runtime (10.3s) compared to logical views and significantly lower slot usage (~20.2). This makes them highly suitable for repeated queries and dashboard workloads where cost and performance both matter.
+
+- **Table Functions** provided the most consistent execution times (~10s across all runs), making them reliable for reusable, parameterized queries. However, they consumed the highest average slots (~31.5), which could lead to higher resource usage for large-scale workloads.
+
+- **Logical Views** were the slowest overall (avg. 11.6s) and required more slots than materialized views, as they always recompute the query from scratch. They are best suited for ensuring always up-to-date results but not for performance-critical pipelines.
